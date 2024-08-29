@@ -16,12 +16,6 @@ Welcome to the **iSkill** project! This website was created as part of my journe
 - **JavaScript**
 - **jQuery**
 
-## Screenshot
-
-Below is a screenshot of the iSkill website:
-
-![iSkill Screenshot](screens/hero%20section.PNG)
-
 ## Demo
 
 You can view the live demo of the website [here](https://ihashir.github.io/iskill-web/).
