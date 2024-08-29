@@ -23,11 +23,3 @@ You can view the live demo of the website [here](https://ihashir.github.io/iskil
 ## Purpose
 
 This project was built purely for educational purposes, to learn and practice responsive web development and jQuery. It is not intended for production use.
-
-## Contributing
-
-This is a personal learning project, so contributions are not expected.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
