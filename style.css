@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.navigation-bar{
+  padding-top: 10px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+  z-index: 999;
+}
+/* .navigation-bar button{
+  display: none;
+} */
+.navigation-bar i{
+  display: none;
+}
+.navigation-bar h2 a{
+  text-decoration: none;
+  color: white;
+  padding-left: 60px;
+}
+.navigation-bar span{
+  color: red;
+}
+
+.navigation-bar .menu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+position: relative;
+padding-right: 70px;
+}
+.navigation-bar .menu a{
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.navigation-bar .menu a:hover{
+  color: red;
+}
+
+.main{
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('img/main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 35px;
+
+}
+
+.overlay{
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0,0.5);
+}
+
+.main .content{
+  position: relative;
+  top: 35vh;
+
+}
+.main h1{
+  color: white;
+  font-size: 3.0em;
+  font-weight: 900;
+  box-shadow: 0px 0px 10000px rgba(0, 0, 0,0.5);
+  margin-bottom: 20px;
+}
+.main h1 span{
+  color: #ff3636;
+  font-size: 1.2em;
+
+}
+.main p{
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px;
+
+}
+.main a{
+  background: white;
+  padding: 13px 23px;
+  text-decoration: none;
+  color: black;
+  transition:all 0.3s;
+  font-size: 20px;
+}
+.main a:hover{
+  background: black;
+  color: white;
+  padding: 13px 30px;
+
+}
+.about{
+  text-align: center;
+  background: url('img/aboutBack.jpg');
+}
+
+
+.about .content{
+  display: flex;
+  flex-direction: row;
+background-repeat: no-repeat;
+background-size: cover;
+justify-content: space-around;
+box-shadow: 3px 0px 10px black;
+padding:10px;
+
+}
+
+.about h1{
+  color: black;
+  padding: 20px;
+  font-size: 50px;
+
+}
+.about span{
+  color:red;
+  font-size: 60px;
+}
+
+.about .content #content p{
+  margin-top: 20px;
+  text-align: left;
+max-width: 500px;
+
+color: rgba(36, 9, 1,0.9);
+line-height: 25px;
+}
+
+
+.about #img{
+
+  text-align: center;
+  position: relatives;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  height: 435px;
+  overflow: hidden;
+  box-shadow: 1px 50px 1000px skyblue;
+  margin-top: 40px;
+}
+.about #img img{
+
+  width: 300px;
+  padding: 0;
+  margin: 0;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  color: white;
+  background: #1f1f1f;
+  z-index: 99;
+  padding:10px 0px;
+}
+
+.mob-navigation{
+  display: none;
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 500px;
+    width: 100%;
+    z-index: 99;
+}
+
+.navigation-bar button{
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.mob-navigation ul.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+.mob-navigation ul.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 21px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+@media (max-width:991px) {
+  .navigation-bar .menu{
+    display: none;
+  }
+  .navigation-bar i{
+    display: block;
+    padding-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .navigation-bar h2 a{
+    padding-left:30px;
+  }
+}
+@media (max-width:768px){
+  footer{
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .about .content {
+    flex-direction: column;
+  }
+  .about h1{
+    font-size: 34px;
+  }
+  .about span{
+    font-size: 39px;
+  }
+  .main h1{
+    font-size: 2.5em;
+    line-height: 55px;
+  }
+  .main h1 span{
+    font-size: 1.2em;
+  }
+  .about #img{
+    margin-bottom:50px ;
+  }
+}
